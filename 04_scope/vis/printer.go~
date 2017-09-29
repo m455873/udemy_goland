@@ -1,0 +1,8 @@
+package vis
+
+import "fmt" // this does not get package level scope (imports)
+
+func PrintVar() {
+	fmt.Println(MyName)
+	fmt.Println(yourName) // yourName is unexported, but 
+}

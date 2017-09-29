@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func makeGreeter() func() string {
+	return func() string {
+		return "Hello Jello!"
+	}
+}
+
+
+func main() {
+
+	greeting := func() {
+		fmt.Println("Hello World")
+	}
+
+	greeting()
+	fmt.Printf("%T\n", greeting)
+	
+	greetx := makeGreeter()
+	fmt.Println(greetx())
+	fmt.Printf("%T\n", greetx)
+}

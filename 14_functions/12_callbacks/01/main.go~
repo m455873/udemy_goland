@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func filter(numbers []int, callback func(int) bool) []int { // slice int array, callbackfunc, takes int, returns bool... filter function returns int array slice
+	xs := []int{}  // empty list
+	for _, n := range numbers {
+		if callback(n) {
+			xs = append(xs,n)
+		}
+	}
+
+	return xs
+}
+
+
+
+func main () {
+
+}

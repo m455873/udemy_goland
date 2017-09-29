@@ -1,0 +1,47 @@
+package main
+
+import "fmt"
+
+func main() {
+	i := 0
+	for i < 10 { // this is basically a while loop
+		fmt.Println(i)
+		i++
+	}
+
+	i = 0
+	for {
+		fmt.Println(i)
+		i++
+		break // exit loop
+	}
+
+	i = 0
+	for {
+		fmt.Println(i)
+		if i >= 10 {
+			break
+		}
+		i++
+	}
+
+	fmt.Println("------")
+	i = 0
+	for {
+		i++
+		if i % 2 == 0 {
+			continue
+		}
+		fmt.Println(i)
+		if i>= 50 {
+			break
+		}
+	}
+
+	fmt.Println("-----runes")
+
+	
+}
+
+
+
